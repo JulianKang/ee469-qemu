@@ -14,6 +14,11 @@
 #include "hw/virtio/virtio.h"
 #include "hw/i386/pc.h"
 #include "qemu/sockets.h"
+
+#ifdef CONFIG_SYSMACROS
+#include <sys/sysmacros.h>
+#endif
+
 #include "virtio-9p.h"
 #include "fsdev/qemu-fsdev.h"
 #include "virtio-9p-xattr.h"
